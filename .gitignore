@@ -1,4 +1,6 @@
-*.sublime-project
-*.sublime-workspace
--*
-node_modules
+/node_modules
+.DS_Store
+.sass-cache
+.publish
+.idea
+npm-debug.log
