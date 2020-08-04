@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Gulp plugin allow modify file in .pipe",
     "license": "MIT",
-    "author": "nK <https://nkdev.info> and original repository author Eduardo Pérez-Bermejo <http://www.github.com/nk-o/gulp-change-file-content>",
+    "author": "nK <https://nkdev.info> and original repository author Eduardo Pérez-Bermejo <https://github.com/ifedu/gulp-modify-file>",
     "main": "index.js",
     "dependencies": {
         "through2": "4.0.2"
