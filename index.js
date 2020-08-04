@@ -3,13 +3,13 @@
 const through = require( 'through2' );
 
 module.exports = function ( fn ) {
-    return through.obj( function ( file, enc, cb ) {
-        const contents = fn( String( file.contents ), file.path, file ) || file.contents;
+    return through.obj( function ( chunk, enc, callback ) {
+        const contents = fn( String( chunk.contents ), chunk.path, chunk ) || chunk.contents;
 
-        if ( true === file.isBuffer() ) {
-            file.contents = new Buffer( contents );
+        if ( true === chunk.isBuffer() ) {
+            chunk.contents = new Buffer.from( contents );
         }
 
-        cb( null, file );
-    });
+        callback( null, chunk );
+    } );
 };

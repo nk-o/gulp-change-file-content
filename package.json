@@ -6,8 +6,8 @@
     "author": "nK <https://nkdev.info> and original repository author Eduardo Pérez-Bermejo <http://www.github.com/nk-o/gulp-change-file-content>",
     "main": "index.js",
     "dependencies": {
-        "gulp": "3.9.1",
-        "through2": "2.0.3"
+        "gulp": "4.0.2",
+        "through2": "4.0.2"
     },
     "files": [
         "index.js"
