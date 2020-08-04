@@ -2,18 +2,16 @@
 
 ```javascript
 const gulp = require( 'gulp' );
+const changeFileContent = require( 'gulp-change-file-content' );
 
-gulp.task( 'js', () => {
-    const changeFileContent = require( 'gulp-change-file-content' );
-
-    return gulp
-        .src( 'app/**/*.js' )
+gulp.task( 'js', () => (
+    gulp.src( 'app/**/*.js' )
         .pipe( changeFileContent( ( content, path, file ) => {
             const start = '(function (){\n';
             const end = '\n})()';
 
             return `${ start }${ content }${ end }`;
         } ) )
-        .pipe( gulp.dest( 'build' ) );
-} );
+        .pipe( gulp.dest( 'build' ) )
+) );
 ```
