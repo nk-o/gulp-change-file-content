@@ -1,6 +1,6 @@
 {
     "name": "gulp-change-file-content",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Gulp plugin allow modify file in .pipe",
     "license": "MIT",
     "author": "nK <https://nkdev.info> and original repository author Eduardo Pérez-Bermejo <https://github.com/ifedu/gulp-modify-file>",
